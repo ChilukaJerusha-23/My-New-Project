@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px 30px;
+            gap: 15px;
+        }
+
+        header a {
+            color: #000;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .sign-in-btn {
+            background: #1a73e8;
+            color: white !important;
+            padding: 9px 23px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .sign-in-btn:hover {
+            background: #1765cc;
+            text-decoration: none !important;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 100px;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo-text {
+            font-size: 90px;
+            font-weight: 400;
+            letter-spacing: -2px;
+        }
+
+        .logo-text .g { color: #4285f4; }
+        .logo-text .o1 { color: #ea4335; }
+        .logo-text .o2 { color: #fbbc05; }
+        .logo-text .g2 { color: #4285f4; }
+        .logo-text .l { color: #34a853; }
+        .logo-text .e { color: #ea4335; }
+
+        /* Search Box */
+        .search-box {
+            width: 584px;
+            max-width: 90%;
+        }
+
+        .search-input-wrapper {
+            display: flex;
+            align-items: center;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+        }
+
+        .search-input-wrapper:hover {
+            box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+        .search-icon {
+            color: #9aa0a6;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .mic-icon {
+            color: #4285f4;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        button {
+            background: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            padding: 10px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            color: #3c4043;
+        }
+
+        button:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            border: 1px solid #dadce0;
+        }
+
+        /* Footer */
+        footer {
+            background: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
+        }
+
+        .footer-country {
+            padding: 15px 30px;
+            border-bottom: 1px solid #dadce0;
+            color: #70757a;
+            font-size: 15px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-left, .footer-right {
+            display: flex;
+            gap: 27px;
+        }
+
+        .footer-links a {
+            color: #70757a;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <a href="#" class="sign-in-btn">Sign in</a>
+    </header>
+
+    <main>
+        <div class="logo">
+            <div class="logo-text">
+                <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="">
+                <span class="mic-icon">🎤</span>
+            </div>
+
+            <div class="buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-country">India</div>
+        <div class="footer-links">
+            <div class="footer-left">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
